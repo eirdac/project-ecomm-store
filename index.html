@@ -15,7 +15,8 @@
 
   </head>
     
-
+    <body>
+     <div class="body">
       <header>
 
         <!-- Site logo -->
@@ -23,348 +24,275 @@
           <a href="index.html"><img src="img/SockLogo.png" alt="Sock World Logo"></a>
         </div>
 
-    
-            <!--top nav bar for categories-->
-            <main class="layout">
-          <nav class="topbar">
-            <div class="split">
-              <h1 class="title">Sock World</h1>
-              <button type="button" class="menu-btn">=</button>
-            </div>
-            <ul class="list">
-              <li><a href="#">By Material</a></li>
-              <li><a href="#">Women's Socks</a></li>
-              <li><a href="#">Men's Socks</a></li>
-              <li><a href="#">Kid's Socks</a></li>
-              
-            </ul>
-        </nav>
-  <body>
-        <!-- Search for a product (non-functional) -->
-        <form>
-          <label>Search
-            <input type="search" name="find" id="find">
-          </label>
-          <button type="button"><span class="material-icons">search</span></button>
-        </form>
-  
-        <!-- Additional nav links -->
-  
-        <ul>
-          <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-          <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-        </ul>
+        <div>
+          <h1 class="title">Sock World</h1>
+        </div>
       </header>
-  
-      <main>
-        <header>
-          <h1>Sale on Women's Socks</h1>
-  
-          <!-- Filtering product form -->
+
+      <!--top navigation with drop down menus-->
+
+      <!--materials-->
+      <div class="navigation">
+        <span class="material-icons nav-icon">menu</span>
+        <select class ="products" name="products" id="menu1">
+            <option value="material">By Material</option>
+              <option value="wool">Wool</option>
+              <option value="cashmere">Cashmere</option>
+              <option value="cotton">Cotton</option>
+              <option value="poly">Polyester</option>
+        </select>
+
+        <!--womens socks-->
+        <select class ="products" name="products" id="menu2">
+          <option value="womens">Women's Socks</option>
+          <option value="dress">Dress</option>
+          <option value="formal">Formal</option>
+          <option value="fun">Fun</option>
+          <option value="no-show">No-show</option>
+        </select>
+        
+        <!--mens socks-->
+        <select class ="products" name="products" id="menu3">
+          <option value="mens">Men's Socks</option>
+          <option value="formal">Formal</option>
+          <option value="athletic">Athletic</option>
+          <option value="fuzzy">Fuzzy</option>
+          <option value="no-show">No-show</option>
+        </select> 
+        
+        <!--kids socks-->
+        <select class ="products" name="products" id="menu4">
+          <option value="kids">Kid's Socks</option>
+          <option value="baby">Baby</option>
+          <option value="toddler">Toddler</option>
+          <option value="special">Special Socks</option>
+        </select>
+
+        <!--add to cart + profile-->
+        <!--not sure why my icons suddenly stopped working while I was working on this site...-->
+        <button type="button"><span class="material-icons nav-icon">shopping_cart</span></button>
+        <button type="button"><span class="material-icons nav-icon">person</span></button>
+
+    
+    <main>
+      <header>
+        <h2 class="title">Sale on Women's Socks</h2>
+
+          <!-- Product Filtering -->
+          
           <form>
-            <h2>Filters</h2>
             <fieldset>
-              <label for="sort">Show</label>
+              <legend>Filters</legend>
+              <label for="sort">SHOW: </label>
               <select name="sort" id="sort">
                 <option value="price-high">Price, highest to lowest</option>
                 <option value="price-low">Price, lowest to highest</option>
                 <option value="newest">Newest releases</option>
+                <option value="newest">Most Relevant</option>
+                <option value="newest">Bestsellers</option>
               </select>
             </fieldset>
+
+            <!--size filtering-->
             <fieldset>
-              <legend>Colour</legend>
-              <ul>
-                <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-                <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-                <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-                <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-                <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              <legend class="subheading">Size</legend>
+              <ul class="list">
+                <li><input type="checkbox" name="size" value="XS" id="XS"> <label for="XS">XS</label></li>
+                <li><input type="checkbox" name="size" value="S" id="S"> <label for="S">S</label></li>
+                <li><input type="checkbox" name="size" value="M" id="M"> <label for="M">M</label></li>
+                <li><input type="checkbox" name="size" value="L" id="L"> <label for="L">L</label></li>
               </ul>
             </fieldset>
+
+            <!--colour filtering-->
             <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-                <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-                <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-                <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-                <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-              </ol>
+              <legend class="subheading">Colour</legend>
+              <ul class ="list">
+                <li><input type="checkbox" name="colour" value="Red" id="Red"> <label for="Red">Red</label></li>
+                <li><input type="checkbox" name="colour" value="White" id="White"> <label for="White">White</label></li>
+                <li><input type="checkbox" name="colour" value="Blue" id="Blue"> <label for="Blue">Blue</label></li>
+                <li><input type="checkbox" name="colour" value="Grey" id="Grey"> <label for="Grey">Grey</label></li>
+                <li><input type="checkbox" name="colour" value="Black" id="Black"> <label for="Black">Black</label></li>
+              </ul>
             </fieldset>
+
+            <!--ratings filtering-->
             <fieldset>
-              <legend>Ratings (above)</legend>
-              <ol>
+              <legend class="subheading">Ratings</legend>
+              <ol class="list">
                 <li>
                   <input type="radio" name="rating" value="4" id="aboveFour">
                   <label for="aboveFour">
-                    <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                    <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_border</span>
                   </label>
                 </li>
+
+
                 <li>
                   <input type="radio" name="rating" value="3" id="aboveThree">
                   <label for="aboveThree">
-                    <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                    <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_border</span><span class="material-icons ratings">star_border</span>
                   </label>
                 </li>
+
+
                 <li>
                   <input type="radio" name="rating" value="2" id="aboveTwo">
                   <label for="aboveTwo">
-                    <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                    <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_border</span>
                   </label>
                 </li>
+
+
                 <li>
                   <input type="radio" name="rating" value="1" id="aboveOne">
                   <label for="aboveOne">
-                    <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                    <span class="material-icons ratings">star</span><span class="material-icons ratings">star_border</span><span class="material-icons ratings">star_border</span><span class="material-icons ratings">star_border</span><span class="material-icons ratings">star_border</span>
                   </label>
                 </li>
               </ol>
+              
             </fieldset>
-          </form>
-        </header>
-  
-        <section>
-          <h2>Results</h2>
 
-        <main class="products">
-          <!-- Product 1 -->
-          <article>
-            <header>
-            <img src="img/banana socks.jpg" alt="Banana Socks">
-            </header>
-            <h3>Go Bananas!</h3>
-            <p>Have fun in the summer sun while wearing these fun socks! This cheerful design is guaranteed to brighten up your day. Made with our Shrink-proof technology to reduce shrinkage.</p>
-             <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> M</label></li>
-                  <li><label><input type="radio" name="size" value="l"> L</label></li>
-                  <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-                </ol>
-              </fieldset>
-  
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-  
-          <!-- Product 2 -->
-          <article>
-            <header>
-              <img src="img/pink yellow socks.jpg" alt="Pink and Yellow striped socks">
-            </header>
-            <h3>Striped</h3>
-            <p>Show off your creative side with our Striped series. Casual, but just a little bit exciting! Made with our Shrink-proof technology.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> M</label></li>
-                  <li><label><input type="radio" name="size" value="l"> L</label></li>
-                  <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-                </ol>
-              </fieldset>
-  
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-  
-          <!-- Product 3 -->
-          <article>
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> M</label></li>
-                  <li><label><input type="radio" name="size" value="l"> L</label></li>
-                  <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-                </ol>
-              </fieldset>
-  
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-    
-          <!-- Product 4 -->
-          <article>
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> M</label></li>
-                  <li><label><input type="radio" name="size" value="l"> L</label></li>
-                  <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-                </ol>
-              </fieldset>
-  
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-  
-          <!-- Product 5 -->
-          <article>
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> M</label></li>
-                  <li><label><input type="radio" name="size" value="l"> L</label></li>
-                  <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-                </ol>
-              </fieldset>
-  
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite_border</span></button>
-              <a href="#">see more</a>
-            </footer>
           </form>
+      </header>
+
+      <h1>Results</h1>
+
+      <section class ="pdisplay">
+        
+        <!-- Product 1 -->
+        <article class = "items">
+          <header>
+            <img src="img/banana socks.jpg" alt="Banana socks" class="pic">
+            <section class="center">
+            <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
+            <br>
+            <data value="15"><del class="sale">$20.00</del> <ins>$15.00</ins></data>
+            <br>
+            <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+            <button type="button"><span class="material-icons cartheart">favorite</span></button>
+          </section>
+          </header>
+          <h2>Banana Mania 🍌</h2>
+          <p>Brighten up your day with these fun banana-tastic socks! Made with our Shrink-proof technology that makes our socks 30% stronger against dryer shrinkage. 
+            <a href="#">View full product page</a>
+          </p>
         </article>
+
+        <br>
+
+        <!-- Product 2 -->
+        <article class="items">
+          <header>
+            <img src="img/pink yellow socks.jpg" alt="Yellow pink stripes">
+            <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
+              <br>
+              <data value="30"><del class="sale">$40.00</del><ins>$30.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
+          </header>
+          <h2>Striped 🟥🟨</h2>
+          <p> Our newest product under the Stripes collection, Striped is a fun choice of footwear when you're looking for something more casual, but still fun. Every pair of Striped socks purchased and we will match the dollar amount to a charity of your choice.
+            <a href="#">View full product page</a>
+          </p>
+        </article>
+
+        <br>
+
+        <!-- Product 3 -->
+        <article class="items">
+          <header>
+            <img src="img/photo-1561886316-0c6da0625c12.jpg" alt="Red Blue White Black Stripes">
+            <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span> 
+              <br>
+              <data value="25"><del class="sale">$30.00</del> <ins>$25.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
+          </header>
+          <h2>Tidal 🌊</h2>
+          <p>Take a look at our Tidal socks: calming blue, fiery red, peaceful white, and mysterious black. Get ready for summer adventures by wearing this pattern!
+            <a href="#">View full product page</a>
+          </p>
+        </article>
+
+        <br>
+  
+        <!-- Product 4 -->
+        <article class="items">
+          <header>
+            <img src="img/sock-foot-photgraphy-1231x800.jpg" alt="Night Forest Socks">
+            <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
+              <br>
+              <data value="15"><del class="sale">$30.00</del> <ins>$15.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
+          </header>
+          <h2>Night Forest 🌙🌲</h2>
+          <p>Sleep comfortably with the Night Forest pattern on your socks. Comfy and cozy, almost like camping under the stars.
+            <a href="#">View full product page</a>
+          </p>
+        </article>
+
+        <br>
 
         <!-- Product 5 -->
-        <article>
+        <article class="items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/orangecropped.jpg" alt="Orange Wool">
+            <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
+              <br>
+              <data value="20"><del class="sale">$26.00</del> <ins>$20.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
+          <h2>Soft Orange 🍊</h2>
+          <p>Soft, warm and cozy. Slip on the Soft Orange socks while you read a good book next to a fireplace, it's the perfect addition.
+          <a href="#">View full product page</a>
+          </p>
+        </article>
 
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> XS</label></li>
-                <li><label><input type="radio" name="size" value="m"> S</label></li>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
+        <br>
 
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons list">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons list">favorite_border</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+        <!--Product 6-->
+        <article class = "items">
+          <header>
+          <img src="img/jokull-close-up-smaller.jpg" alt="grayscale socks">
+            <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
+              <br>
+              <data value="19"><del class="sale">$30.00</del> <ins>$19.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <br>
+            </section>
+          </header>
+        <h2>Knitted Up 🧶</h2>
+        <p>The Knitted Up pattern is great for casual wear or formal wear. The grayscale colour scheme is subtle enough for any occasion.
+          <a href="#">View full product page</a>
+        </p>
         </article>
       </section>
+      </main>
+      
+    <br>  
 
+
+    <!--footer/pagination-->
+    <main>
       <section role="navigation" aria-label="Pagination">
         <p>1-5 of 23 products found</p>
         <ol>
@@ -376,7 +304,8 @@
         </ol>
       </section>
     </main>
-  </body>
+
+    <hr>
 
     <footer>
       <p>&copy; Copyright, 1991.</p>
@@ -393,6 +322,7 @@
         <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
       </ul>
     </footer>
-
+  
+    </div>  
   </body>
-</html>
+  </html>

@@ -1,20 +1,27 @@
 /* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
 .body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.background {
+	color: #ffffff;
 }
 
 .title {
-	color: dodgerblue;
+	color: rgb(54, 81, 109);
 	font-size: 1.5em;
 	margin: 0.5em 0;
 	justify-content: center;
 	font-family: 'Red Rose', cursive;
-
 }
 
 .logo {
 	width: 40%;
-
 }
 
 .split {
@@ -23,20 +30,25 @@
 	justify-content: space-between;
 }
 
-.topbar {
-	box-sizing: border-box;
-	background-color: #ffffff;
-	color: darkgrey;
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	width: 100%;
-	padding: 0 1em;
-	line-height: 1;
-}
-
 .list {
 	list-style: none;
 	display: inline;
+}
+
+.nav-icon {
+	color: dodgerblue;
+	font-family: 'Red Rose', cursive;
+}
+
+.subheading {
+	color: palevioletred;
+	font-family: 'Red Rose', cursive;
+}
+
+.ratings {
+	color: rgb(187, 175, 47);
+}
+
+.sale {
+	color:red;
 }
