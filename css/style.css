@@ -1,1 +1,42 @@
 /* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
+.body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title {
+	color: dodgerblue;
+	font-size: 1.5em;
+	margin: 0.5em 0;
+	justify-content: center;
+	font-family: 'Red Rose', cursive;
+
+}
+
+.logo {
+	width: 40%;
+
+}
+
+.split {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topbar {
+	box-sizing: border-box;
+	background-color: #ffffff;
+	color: darkgrey;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 0 1em;
+	line-height: 1;
+}
+
+.list {
+	list-style: none;
+	display: inline;
+}

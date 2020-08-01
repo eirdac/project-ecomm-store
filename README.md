@@ -4,7 +4,7 @@
 
 ### Project Overview
 
-Create the "index" page for an e-commerce retail store, selling any product of your choosing. Think of the "index" page, like the first page of a listing of all available products, products of a category, or the results of a search - where multiple different products are displayed (in brief, not necessarily with _all_ product info), and a (fake) pagination component at the bottom shows this is _"X products of Y total"_.
+Create the "index" page for an e-commerce retail store, selling any product of your choosing. Think of the "index" page, like the first page of a listing of all available products, products of a category, or the results of a search - where multiple different products are displayed (in brief, not necessarily with _all_ product info), and a (fake) pagination component at the bottom shows this is _"X products of Y total"_. 
 
 A sample HTML page has been provided as `index.html`, with a structured sample product (repeated five times, as an example). You may use this markup as a guide, or as the starting markup to modify as needed. At minimum, the product content should be modified to add your store's unique products by simply updated the given content to create at least five unique products. Each product should have enough information available to allow a user to add it to their cart.
 
