@@ -1,33 +1,32 @@
 /* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
 .body {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 10em;
+	padding-right: 10em;
+
 }
 
 .background {
 	color: #ffffff;
 }
 
+
 .title {
 	color: rgb(54, 81, 109);
 	font-size: 1.5em;
 	margin: 0.5em 0;
-	justify-content: center;
 	font-family: 'Red Rose', cursive;
 }
 
 .logo {
-	width: 40%;
-}
+	width: 5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 
-.split {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .list {
@@ -35,9 +34,29 @@
 	display: inline;
 }
 
+.inline {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
 .nav-icon {
 	color: dodgerblue;
 	font-family: 'Red Rose', cursive;
+	border: none;
+}
+
+.nav-icon:hover {
+	color: peru;
+}
+
+.item-img {
+	width: 60em;
+}
+
+.item-name {
+	font-family: 'Red Rose', cursive;
+	color: black;
 }
 
 .subheading {
@@ -52,3 +71,20 @@
 .sale {
 	color:red;
 }
+
+.a {
+	color: teal;
+}
+
+.a:hover {
+	color: cornflowerblue;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+

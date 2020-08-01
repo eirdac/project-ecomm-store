@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Red+Rose&display=swap">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -20,20 +21,25 @@
       <header>
 
         <!-- Site logo -->
-        <div class="logo"></div>
-          <a href="index.html"><img src="img/SockLogo.png" alt="Sock World Logo"></a>
-        </div>
+        <div class="logo"><a href="index.html"><img src="img/SockLogo.png" alt="Sock World Logo"></a></div>
 
+        <!--title-->
         <div>
           <h1 class="title">Sock World</h1>
         </div>
       </header>
 
-      <!--top navigation with drop down menus-->
+      <!--top navigation-->
+      <ul class="navigation inline list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
       <!--materials-->
-      <div class="navigation">
-        <span class="material-icons nav-icon">menu</span>
+      <div class="navigation left">
+        <span class="material-icons">menu</span>
         <select class ="products" name="products" id="menu1">
             <option value="material">By Material</option>
               <option value="wool">Wool</option>
@@ -70,9 +76,17 @@
 
         <!--add to cart + profile-->
         <!--not sure why my icons suddenly stopped working while I was working on this site...-->
-        <button type="button"><span class="material-icons nav-icon">shopping_cart</span></button>
-        <button type="button"><span class="material-icons nav-icon">person</span></button>
-
+        <button class="material-icons">shopping_cart</button>
+        <button class="material-icons">person</button>
+        
+        <!--search funtion-->
+        
+        <form class="inline right">
+          <label>Search
+            <input type="search" name="find" id="find">
+          </label>
+          <button type="button"><span class="material-icons">search</span></button>
+        </form>
     
     <main>
       <header>
@@ -155,27 +169,33 @@
             </fieldset>
 
           </form>
+
+        <br>
+          <!--apply filters button-->
+          <button class="pure-button">Apply filters</button>
+        <br>
+
       </header>
 
-      <h1>Results</h1>
+      <h1 class="title">Results</h1>
 
-      <section class ="pdisplay">
+      <section id="products">
         
         <!-- Product 1 -->
         <article class = "items">
           <header>
-            <img src="img/banana socks.jpg" alt="Banana socks" class="pic">
+            <img src="img/banana socks.jpg" class="item-img"alt="Banana socks" class="pic">
             <section class="center">
             <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
             <br>
             <data value="15"><del class="sale">$20.00</del> <ins>$15.00</ins></data>
             <br>
-            <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-            <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+            <button type="button"><span class="material-icons">favorite</span></button>
           </section>
           </header>
-          <h2>Banana Mania 🍌</h2>
-          <p>Brighten up your day with these fun banana-tastic socks! Made with our Shrink-proof technology that makes our socks 30% stronger against dryer shrinkage. 
+          <h2 class="item-name">Banana Mania 🍌</h2> 
+          <p>Brighten up your day with these banana-tastic socks! Made with our Shrink-proof technology that makes our socks 30% stronger against dryer shrinkage. 
             <a href="#">View full product page</a>
           </p>
         </article>
@@ -185,17 +205,17 @@
         <!-- Product 2 -->
         <article class="items">
           <header>
-            <img src="img/pink yellow socks.jpg" alt="Yellow pink stripes">
+            <img src="img/pink yellow socks.jpg" class="item-img" alt="Yellow pink stripes">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
               <br>
               <data value="30"><del class="sale">$40.00</del><ins>$30.00</ins></data>
               <br>
-              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
             </section>
           </header>
-          <h2>Striped 🟥🟨</h2>
+          <h2 class="item-name">Striped 🟥🟨</h2>
           <p> Our newest product under the Stripes collection, Striped is a fun choice of footwear when you're looking for something more casual, but still fun. Every pair of Striped socks purchased and we will match the dollar amount to a charity of your choice.
             <a href="#">View full product page</a>
           </p>
@@ -206,17 +226,17 @@
         <!-- Product 3 -->
         <article class="items">
           <header>
-            <img src="img/photo-1561886316-0c6da0625c12.jpg" alt="Red Blue White Black Stripes">
+            <img src="img/photo-1561886316-0c6da0625c12.jpg" class="item-img" alt="Red Blue White Black Stripes">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span> 
               <br>
               <data value="25"><del class="sale">$30.00</del> <ins>$25.00</ins></data>
               <br>
-              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
             </section>
           </header>
-          <h2>Tidal 🌊</h2>
+          <h2 class="item-name">Tidal 🌊</h2>
           <p>Take a look at our Tidal socks: calming blue, fiery red, peaceful white, and mysterious black. Get ready for summer adventures by wearing this pattern!
             <a href="#">View full product page</a>
           </p>
@@ -227,17 +247,17 @@
         <!-- Product 4 -->
         <article class="items">
           <header>
-            <img src="img/sock-foot-photgraphy-1231x800.jpg" alt="Night Forest Socks">
+            <img src="img/sock-foot-photgraphy-1231x800.jpg" class="item-img" alt="Night Forest Socks">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
               <br>
               <data value="15"><del class="sale">$30.00</del> <ins>$15.00</ins></data>
               <br>
-              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
             </section>
           </header>
-          <h2>Night Forest 🌙🌲</h2>
+          <h2 class="item-name">Night Forest 🌙🌲</h2>
           <p>Sleep comfortably with the Night Forest pattern on your socks. Comfy and cozy, almost like camping under the stars.
             <a href="#">View full product page</a>
           </p>
@@ -248,17 +268,17 @@
         <!-- Product 5 -->
         <article class="items">
           <header>
-            <img src="img/orangecropped.jpg" alt="Orange Wool">
+            <img src="img/orangecropped.jpg" class="item-img" alt="Orange Wool">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
               <br>
               <data value="20"><del class="sale">$26.00</del> <ins>$20.00</ins></data>
               <br>
-              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
             </section>
           </header>
-          <h2>Soft Orange 🍊</h2>
+          <h2 class="item-name">Soft Orange 🍊</h2>
           <p>Soft, warm and cozy. Slip on the Soft Orange socks while you read a good book next to a fireplace, it's the perfect addition.
           <a href="#">View full product page</a>
           </p>
@@ -269,18 +289,18 @@
         <!--Product 6-->
         <article class = "items">
           <header>
-          <img src="img/jokull-close-up-smaller.jpg" alt="grayscale socks">
+          <img src="img/jokull-close-up-smaller.jpg" class="item-img" alt="grayscale socks">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
               <br>
               <data value="19"><del class="sale">$30.00</del> <ins>$19.00</ins></data>
               <br>
-              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
               <br>
             </section>
           </header>
-        <h2>Knitted Up 🧶</h2>
+        <h2 class="item-name">Knitted Up 🧶</h2>
         <p>The Knitted Up pattern is great for casual wear or formal wear. The grayscale colour scheme is subtle enough for any occasion.
           <a href="#">View full product page</a>
         </p>
@@ -291,11 +311,11 @@
     <br>  
 
 
-    <!--footer/pagination-->
+    <!--pagination-->
     <main>
       <section role="navigation" aria-label="Pagination">
-        <p>1-5 of 23 products found</p>
-        <ol>
+        <p>1-6 of 15 products found</p>
+        <ol class="list inline">
           <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
           <li><a href="#" aria-label="Page 2">2</a></li>
           <li><a href="#" aria-label="Page 3">3</a></li>
@@ -307,16 +327,17 @@
 
     <hr>
 
+    <!--footer-->
     <footer>
-      <p>&copy; Copyright, 1991.</p>
+      <p>&copy; Copyright, 2020.</p>
       <nav aria-label="Legal">
-        <ul>
+        <ul class="list ">
           <li><a href="#">Terms of Use</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list inline">
         <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
         <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
         <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
