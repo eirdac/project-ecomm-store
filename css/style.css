@@ -194,7 +194,7 @@ li {
 	}
 
 	.product {
-		width: 20%;
+		width: 30%;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
