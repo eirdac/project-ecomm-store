@@ -17,27 +17,35 @@
   </head>
     
     <body>
-     <div class="body">
+     <div class="container">
       <header>
 
         <!-- Site logo -->
         <div class="logo"><a href="index.html"><img src="img/SockLogo.png" alt="Sock World Logo"></a></div>
 
-        <!--title-->
-        <div>
-          <h1 class="title">Sock World</h1>
-        </div>
+      <!--top navigation-->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <!--top navigation-->
-      <ul class="navigation inline list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+            
+        <!--search function-->
+        
+        <form class="inline right">
+          <label>
+            <input type="search" name="find" id="find" placeholder="find your ideal socks!">
+          </label>
+          <button type="button"><span class=" search material-icons">search</span></button>
+        </form>
 
       <!--materials-->
+      
       <div class="navigation left">
         <span class="material-icons">menu</span>
         <select class ="products" name="products" id="menu1">
@@ -78,19 +86,12 @@
         <!--not sure why my icons suddenly stopped working while I was working on this site...-->
         <button class="material-icons">shopping_cart</button>
         <button class="material-icons">person</button>
-        
-        <!--search funtion-->
-        
-        <form class="inline right">
-          <label>Search
-            <input type="search" name="find" id="find">
-          </label>
-          <button type="button"><span class="material-icons">search</span></button>
-        </form>
+
     
+        
     <main>
-      <header>
-        <h2 class="title">Sale on Women's Socks</h2>
+ 
+        <h2 class="title">Newest Socks</h2>
 
           <!-- Product Filtering -->
           
@@ -175,99 +176,104 @@
           <button class="pure-button">Apply filters</button>
         <br>
 
-      </header>
+  
 
       <h1 class="title">Results</h1>
 
-      <section id="products">
+      <section class="container" id="products">
         
         <!-- Product 1 -->
-        <article class = "items">
-          <header>
-            <img src="img/banana socks.jpg" class="item-img"alt="Banana socks" class="pic">
-            <section class="center">
-            <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
-            <br>
-            <data value="15"><del class="sale">$20.00</del> <ins>$15.00</ins></data>
-            <br>
-            <button type="button"><span class="material-icons">add_shopping_cart</span></button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </section>
-          </header>
-          <h2 class="item-name">Banana Mania 🍌</h2> 
-          <p>Brighten up your day with these banana-tastic socks! Made with our Shrink-proof technology that makes our socks 30% stronger against dryer shrinkage. 
-            <a href="#">View full product page</a>
-          </p>
-        </article>
+          <article class = "items">
 
-        <br>
+              <img src="img/banana socks.jpg" class="item-img"alt="Banana socks" class="pic">
+              <section class="center">
+              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
+              <br>
+              <data value="15"><del class="sale">$20.00</del> <ins>$15.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons">favorite</span></button>
+            </section>
+
+            <h2 class="item-name">Banana Mania 🍌</h2> 
+            <p>Brighten up your day with these banana-tastic socks! Made with our Shrink-proof technology that makes our socks 30% stronger against dryer shrinkage. 
+              <br>
+              <a href="#">View full product page</a>
+            </p>
+          </article>
+
+
+
 
         <!-- Product 2 -->
-        <article class="items">
-          <header>
-            <img src="img/pink yellow socks.jpg" class="item-img" alt="Yellow pink stripes">
-            <section class="center">
-              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
-              <br>
-              <data value="30"><del class="sale">$40.00</del><ins>$30.00</ins></data>
-              <br>
-              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-            </section>
-          </header>
-          <h2 class="item-name">Striped 🟥🟨</h2>
-          <p> Our newest product under the Stripes collection, Striped is a fun choice of footwear when you're looking for something more casual, but still fun. Every pair of Striped socks purchased and we will match the dollar amount to a charity of your choice.
-            <a href="#">View full product page</a>
-          </p>
-        </article>
+          <article class="items">
 
-        <br>
+              <img src="img/pink yellow socks.jpg" class="item-img" alt="Yellow pink stripes">
+              <section class="center">
+                <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
+                <br>
+                <data value="30"><del class="sale">$40.00</del><ins>$30.00</ins></data>
+                <br>
+                <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+              </section>
+
+            <h2 class="item-name">Striped 🟥🟨</h2>
+            <p> Our newest product under the Stripes collection, Striped is a fun choice of footwear when you're looking for something more casual, but still fun. Every pair of Striped socks purchased and we will match the dollar amount to a charity of your choice.
+              <br>
+              <a href="#">View full product page</a>
+            </p>
+          </article>
+
+
+
 
         <!-- Product 3 -->
-        <article class="items">
-          <header>
-            <img src="img/photo-1561886316-0c6da0625c12.jpg" class="item-img" alt="Red Blue White Black Stripes">
-            <section class="center">
-              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span> 
-              <br>
-              <data value="25"><del class="sale">$30.00</del> <ins>$25.00</ins></data>
-              <br>
-              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-            </section>
-          </header>
-          <h2 class="item-name">Tidal 🌊</h2>
-          <p>Take a look at our Tidal socks: calming blue, fiery red, peaceful white, and mysterious black. Get ready for summer adventures by wearing this pattern!
-            <a href="#">View full product page</a>
-          </p>
-        </article>
+          <article class="items">
 
-        <br>
+              <img src="img/photo-1561886316-0c6da0625c12.jpg" class="item-img" alt="Red Blue White Black Stripes">
+              <section class="center">
+                <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span> 
+                <br>
+                <data value="25"><del class="sale">$30.00</del> <ins>$25.00</ins></data>
+                <br>
+                <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+              </section>
+
+            <h2 class="item-name">Tidal 🌊</h2>
+            <p>Take a look at our Tidal socks: calming blue, fiery red, peaceful white, and mysterious black. Get ready for summer adventures by wearing this pattern!
+              <br>
+              <a href="#">View full product page</a>
+            </p>
+          </article>
+
   
         <!-- Product 4 -->
-        <article class="items">
-          <header>
-            <img src="img/sock-foot-photgraphy-1231x800.jpg" class="item-img" alt="Night Forest Socks">
-            <section class="center">
-              <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
-              <br>
-              <data value="15"><del class="sale">$30.00</del> <ins>$15.00</ins></data>
-              <br>
-              <button type="button"><span class="material-icons">add_shopping_cart</span></button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-            </section>
-          </header>
-          <h2 class="item-name">Night Forest 🌙🌲</h2>
-          <p>Sleep comfortably with the Night Forest pattern on your socks. Comfy and cozy, almost like camping under the stars.
-            <a href="#">View full product page</a>
-          </p>
-        </article>
+          <article class="items">
 
-        <br>
+              <img src="img/sock-foot-photgraphy-1231x800.jpg" class="item-img" alt="Night Forest Socks">
+              <section class="center">
+                <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
+                <br>
+                <data value="15"><del class="sale">$30.00</del> <ins>$15.00</ins></data>
+                <br>
+                <button type="button"><span class="material-icons">add_shopping_cart</span></button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+              </section>
+
+            <h2 class="item-name">Night Forest 🌙🌲</h2>
+            <p>Sleep comfortably with the Night Forest pattern on your socks. Comfy and cozy, almost like camping under the stars.
+              <br>
+              <a href="#">View full product page</a>
+            </p>
+          </article>
+
+
 
         <!-- Product 5 -->
         <article class="items">
-          <header>
+
             <img src="img/orangecropped.jpg" class="item-img" alt="Orange Wool">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star</span>
@@ -277,18 +283,19 @@
               <button type="button"><span class="material-icons">add_shopping_cart</span></button>
               <button type="button"><span class="material-icons">favorite</span></button>
             </section>
-          </header>
+
           <h2 class="item-name">Soft Orange 🍊</h2>
           <p>Soft, warm and cozy. Slip on the Soft Orange socks while you read a good book next to a fireplace, it's the perfect addition.
-          <a href="#">View full product page</a>
+            <br>
+            <a href="#">View full product page</a>
           </p>
         </article>
 
-        <br>
+
 
         <!--Product 6-->
         <article class = "items">
-          <header>
+
           <img src="img/jokull-close-up-smaller.jpg" class="item-img" alt="grayscale socks">
             <section class="center">
               <span class="material-icons ratings">star</span><span class="material-icons ratings">star</span><span class="material-icons ratings">star_half</span>
@@ -299,16 +306,17 @@
               <button type="button"><span class="material-icons">favorite</span></button>
               <br>
             </section>
-          </header>
+
         <h2 class="item-name">Knitted Up 🧶</h2>
         <p>The Knitted Up pattern is great for casual wear or formal wear. The grayscale colour scheme is subtle enough for any occasion.
+          <br>
           <a href="#">View full product page</a>
         </p>
         </article>
       </section>
       </main>
       
-    <br>  
+
 
 
     <!--pagination-->

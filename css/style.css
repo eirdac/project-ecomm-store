@@ -1,11 +1,10 @@
-/* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 10em;
-	padding-right: 10em;
 
 }
 
@@ -13,25 +12,55 @@
 	color: #ffffff;
 }
 
+.navigation {
+	justify-content: space-around;
+}
+
+
+.search {
+	margin-right: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header {
+	background-color:black;
+	color: white;
+	font-size: 1.5em;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* links */
+a {
+	text-decoration: none;
+	color: lightblue;
+	font-family: 'Alata', sans-serif;
+}
+
+a:hover {
+	color: peru;
+}
+
+li {
+	list-style-type: none;
+}
 
 .title {
 	color: rgb(54, 81, 109);
-	font-size: 1.5em;
+	font-size: 1.2em;
+	align-items: center;
 	margin: 0.5em 0;
 	font-family: 'Red Rose', cursive;
+	padding-top: 1em;
 }
 
-.logo {
-	width: 5em;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
+/* no bullet point on list */
 .list {
-	list-style: none;
-	display: inline;
+	list-style-type: none;
+	display: inline-block;
 }
 
 .inline {
@@ -49,6 +78,7 @@
 .nav-icon:hover {
 	color: peru;
 }
+
 
 .item-img {
 	width: 1000em;
@@ -72,14 +102,8 @@
 	color:red;
 }
 
-.a {
-	color: teal;
-}
 
-.a:hover {
-	color: cornflowerblue;
-}
-
+/* positioning */
 .left {
 	float: left;
 }
@@ -88,3 +112,65 @@
 	float: right;
 }
 
+
+
+/* MEDIA QUERIES */
+
+
+
+/* media query 768px - tablet size*/
+@media screen and (min-width: 768px) {
+	
+	body {
+		font-size: 1.15em;
+	}
+	
+	.items {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 500px;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 2em;
+
+    	justify-content: space-between;
+		
+		width: 768px;
+	}
+
+	.item-img {
+		height: 10em;
+	}
+
+	li {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+}
+
+
+
+/* media query 1024px - laptop size */
+
+@media screen and (min-width: 1024px) {
+
+	body {
+		font-size: 1.2em;
+	}
+
+	.items {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
