@@ -38,7 +38,7 @@
 
       <!--materials-->
       
-      <div class="navigation left">
+      <div class="top navigation left">
         <span class="material-icons">menu</span>
         <select class ="products" name="products" id="menu1">
             <option value="material">By Material</option>
@@ -99,7 +99,7 @@
 
           <!-- Product Filtering -->
           
-          <form>
+          <form class="filters">
             <fieldset>
               <legend>Filters</legend>
               <label for="sort">SHOW: </label>
@@ -207,7 +207,7 @@
           </article>
 
 
-
+          
 
         <!-- Product 2 -->
           <article class="items">
@@ -244,7 +244,8 @@
                 <button type="button"><span class="material-icons">add_shopping_cart</span></button>
                 <button type="button"><span class="material-icons">favorite</span></button>
               </section>
-
+            
+              <br>
             <h2 class="item-name">Tidal 🌊</h2>
             <p>Take a look at our Tidal socks: calming blue, fiery red, peaceful white, and mysterious black. Get ready for summer adventures by wearing this pattern!
               <br>
@@ -390,13 +391,15 @@
     <!--pagination-->
     <main>
       <section role="navigation" aria-label="Pagination">
-        <p>1-6 of 15 products found</p>
-        <ol class="list inline">
+        <p>1 - 9 of 15 products found</p>
+        <ol class="list inline page">
+          <li><a href="#" aria-label="prev"><</a></li>
           <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
           <li><a href="#" aria-label="Page 2">2</a></li>
           <li><a href="#" aria-label="Page 3">3</a></li>
           <li><a href="#" aria-label="Page 4">4</a></li>
           <li><a href="#" aria-label="Page 5">5</a></li>
+          <li><a href="#" aria-label="next">></a></li>
         </ol>
       </section>
     </main>
@@ -407,7 +410,7 @@
     <footer>
       <p>&copy; Copyright, 2020.</p>
       <nav aria-label="Legal">
-        <ul class="list ">
+        <ul class="list">
           <li><a href="#">Terms of Use</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Accessibility Policy</a></li>

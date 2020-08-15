@@ -1,0 +1,1 @@
+Everything in this project has been coded by me. The only resources that do not belong to me are the Google Material Icons and the Google Fonts that I have chosen to use for my e-commerce site.

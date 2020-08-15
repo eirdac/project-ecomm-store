@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -14,6 +16,10 @@ body {
 
 .navigation {
 	justify-content: space-around;
+}
+
+.filters {
+	width: 100%;
 }
 
 header {
@@ -57,9 +63,12 @@ li {
 }
 
 .inline {
+	display: inline-block;
+}
+
+.page {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .nav-icon {
@@ -118,7 +127,9 @@ li {
 }
 
 
-
+.top {
+	justify-content: space-between;
+}
 
 
 
@@ -135,10 +146,6 @@ li {
 			font-size: 1.15em;
 		}
 
-		.product {
-			width: 70%;
-		}
-		
 		.items {
 			display: flex;
 			align-items: stretch;
@@ -151,11 +158,12 @@ li {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr 1fr;
-			gap: 2em;
+			gap: 1em;
 	
 			justify-content: space-between;
 			
 			width: 768px;
+			height: 100%;
 		}
 	
 		.item-img {
@@ -176,12 +184,17 @@ li {
 
 /* media query 1024px - laptop size */
 @media screen and (min-width: 1024px) {
+	
 	body {
-		font-size: 1.15em;
+		font-size: 1.05em;
+	}
+
+	.top {
+		width: 100%;
 	}
 
 	.product {
-		width: 70%;
+		width: 20%;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -194,9 +207,10 @@ li {
 		align-items: stretch;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		width: 500px;
+		width: 260px;
 	}
 
+	/* splitting the page into a sidebar and content */
 	.split {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -204,8 +218,9 @@ li {
 		gap: 2em;
 
 		justify-content: space-between;
-		
-		width: 768px;
+
+		width: 50%;
+	
 	}
 
 	.item-img {
