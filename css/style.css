@@ -16,13 +16,6 @@ body {
 	justify-content: space-around;
 }
 
-
-.search {
-	margin-right: 5px;
-	display: flex;
-	justify-content: flex-end;
-}
-
 header {
 	background-color:black;
 	color: white;
@@ -79,6 +72,13 @@ li {
 	color: peru;
 }
 
+.product {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 
 .item-img {
 	width: 1000em;
@@ -90,7 +90,7 @@ li {
 }
 
 .subheading {
-	color: palevioletred;
+	color: slateblue;
 	font-family: 'Red Rose', cursive;
 }
 
@@ -112,6 +112,17 @@ li {
 	float: right;
 }
 
+.center {
+	justify-content: center;
+	padding-right: 2em;
+}
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -120,9 +131,62 @@ li {
 
 /* media query 768px - tablet size*/
 @media screen and (min-width: 768px) {
+		body {
+			font-size: 1.15em;
+		}
+
+		.product {
+			width: 70%;
+		}
+		
+		.items {
+			display: flex;
+			align-items: stretch;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 500px;
+		}
 	
+		.split {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			gap: 2em;
+	
+			justify-content: space-between;
+			
+			width: 768px;
+		}
+	
+		.item-img {
+			height: 100%;
+		}
+	
+		li {
+			display: block;
+			box-sizing: border-box;
+			padding-right: 1em;
+		}
+	
+}
+
+	
+
+
+
+/* media query 1024px - laptop size */
+@media screen and (min-width: 1024px) {
 	body {
 		font-size: 1.15em;
+	}
+
+	.product {
+		width: 70%;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 2em;
 	}
 	
 	.items {
@@ -133,44 +197,25 @@ li {
 		width: 500px;
 	}
 
-	.container {
+	.split {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
-		grid-gap: 2em;
+		gap: 2em;
 
-    	justify-content: space-between;
+		justify-content: space-between;
 		
 		width: 768px;
 	}
 
 	.item-img {
-		height: 10em;
+		height: 100%;
 	}
 
 	li {
-		display: inline-block;
+		display: block;
 		box-sizing: border-box;
+		padding-right: 1em;
 	}
 
-}
-
-
-
-/* media query 1024px - laptop size */
-
-@media screen and (min-width: 1024px) {
-
-	body {
-		font-size: 1.2em;
-	}
-
-	.items {
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-
-	li {
-		display: inline-block;
-	}
 }
